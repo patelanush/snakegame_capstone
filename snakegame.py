@@ -5,8 +5,8 @@ GRID_W, GRID_H = 24, 24
 WIDTH, HEIGHT = GRID_W * CELL_SIZE, GRID_H * CELL_SIZE
 FPS = 12
 BG = (18, 18, 18)
-SNAKE = (60, 200, 85)
-SNAKE_HEAD = (90, 230, 115)
+SNAKE = (60, 300, 85)
+SNAKE_HEAD = (90, 230, 125)
 APPLE = (220, 70, 70)
 GRID = (35, 35, 35)
 TEXT = (230, 230, 230)
@@ -120,7 +120,7 @@ def main():
                 pygame.quit()
                 sys.exit()
             game.handle_input(event)
-        game.step()
+        game.step() 
         game.draw(screen, font)
         pygame.display.flip()
         clock.tick(speed)
